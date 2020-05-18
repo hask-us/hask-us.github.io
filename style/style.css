@@ -4,6 +4,13 @@ body {
   width: 100vw;
   overflow: hidden;
   background-color: black;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .hask-outline-container {
@@ -32,4 +39,7 @@ body {
   width: 20vh;
   top: 10vh;
   z-index: 1;
+}
+
+.noSelect {
 }
