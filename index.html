@@ -5,24 +5,57 @@
     <title>HASK</title>
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="assets/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
   </head>
   <body>
-    <div class="hask">
-      <div class="hask-container">
-        <img class="hask__HA" src="./assets/HA.svg" />
+    <div class="home">
+      <div class="home-container">
+        <img class="home__HA" src="./assets/HA.svg" />
         <img src="./assets/S.svg" />
         <img src="./assets/K.svg" />
       </div>
-      <div class="hask-outline-container" id="outline">
-        <img class="hask__HA-outline" src="./assets/HA-outline.svg" />
+      <div class="home-outline-container" id="outline">
+        <img class="home__HA-outline" src="./assets/HA-outline.svg" />
         <img src="./assets/S-outline.svg" />
         <img src="./assets/K-outline.svg" />
       </div>
-      <img class="hask__everything" src="./assets/HaskUs.svg" />
+
+      <img class="home__everything" src="./assets/HaskUs.svg" />
+
       <a href="mailto:contact@hask.us"
-        ><img class="hask__contact" src="./assets/mail.svg" />
+        ><img class="home__contact" src="./assets/mail.svg" />
       </a>
+
+      <img
+        class="home__icon home__bio-icon"
+        src="./assets/bio-icon.png"
+        id="bio-icon"
+      />
+      <div class="home__frame home__bio" id="bio">
+        <img src="./assets/bio.png" />
+      </div>
+
+      <img
+        class="home__icon home__work-icon"
+        src="./assets/work-icon.png"
+        id="work-icon"
+      />
+      <div class="home__frame home__work" id="work">
+        <img src="./assets/work.png" />
+        <a
+          class="home__work__link home__work__houseum"
+          href="https://houseum.fr"
+          target="_blank"
+        >
+          <img class="home__link" src="./assets/houseum.png" />
+        </a>
+        <a class="home__work__link home__work__ms" href="#" target="_blank">
+          <img class="home__link" src="./assets/ms.png" />
+        </a>
+        <a class="home__work__link home__work__insta" href="#" target="_blank">
+          <img class="home__link" src="./assets/insta.png" />
+        </a>
+      </div>
     </div>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
@@ -31,5 +64,5 @@
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
     crossorigin="anonymous"
   ></script>
-  <script type="text/javascript" src="./animate-outline.js"></script>
+  <script type="text/javascript" src="./script.js"></script>
 </html>

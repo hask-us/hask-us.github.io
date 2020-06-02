@@ -1,0 +1,83 @@
+.home {
+  position: relative;
+  margin: 0 auto;
+  width: 20vh;
+  &-container {
+    position: absolute;
+    width: 20vh;
+    top: 10vh;
+    z-index: 1;
+  }
+  &-outline-container {
+    z-index: 2;
+  }
+  &__HA-outline {
+    margin-top: 10vh;
+  }
+  &__everything {
+    margin-top: 5vh;
+  }
+  &__contact {
+    margin-top: 2.5vh;
+  }
+
+  &__icon {
+    position: absolute;
+    width: 4.5vh;
+    border-radius: 50%;
+    @include thick-white-outline;
+  }
+  &__bio-icon {
+    left: -50%;
+    top: 37vh;
+  }
+  &__work-icon {
+    right: -50%;
+    top: 37vh;
+  }
+
+  &__frame {
+    position: absolute;
+    display: none;
+    z-index: 2;
+    opacity: 0;
+    @include thick-white-outline;
+    background-color: black;
+    & img {
+      object-fit: cover;
+      height: 15vh;
+    }
+  }
+  &__bio {
+    right: 50%;
+    top: 37vh;
+    @include for-size(phone-only) {
+      right: 5%;
+    }
+  }
+  &__work {
+    left: 50%;
+    top: 37vh;
+    @include for-size(phone-only) {
+      left: 5%;
+    }
+    &__link {
+      bottom: 0.6vh;
+      position: absolute;
+      & img {
+        height: 4.5vh;
+        width: 4.5vh;
+        @include thin-white-outline;
+      }
+    }
+    &__houseum {
+      left: 1vh;
+    }
+    &__ms {
+      left: 6.5vh;
+    }
+    &__insta {
+      left: 12vh;
+    }
+  }
+}

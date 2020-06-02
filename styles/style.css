@@ -1,0 +1,101 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: black;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.hask-outline-container {
+  z-index: 2;
+}
+
+.hask {
+  position: relative;
+  margin: 0 auto;
+  width: 20vh;
+}
+
+.white-outline {
+  border: 2px solid white;
+}
+
+.hask__bio-icon {
+  left: -50%;
+  top: 37vh;
+}
+
+.hask__work-icon {
+  right: -50%;
+  top: 37vh;
+}
+
+.hask__icon {
+  position: absolute;
+  width: 4.5vh;
+  border-radius: 50%;
+}
+
+.hask__HA-outline {
+  margin-top: 10vh;
+}
+
+.hask__everything {
+  margin-top: 5vh;
+}
+
+.hask__contact {
+  margin-top: 2.5vh;
+}
+
+.hask-container {
+  position: absolute;
+  width: 20vh;
+  top: 10vh;
+  z-index: 1;
+}
+
+.hask__bio {
+  height: 15vh;
+  right: 50%;
+  top: 37vh;
+}
+
+@media screen and (max-width: 600px) {
+  .hask__bio {
+    right: 35%;
+  }
+}
+.hask__work {
+  height: 15vh;
+  left: 50%;
+  top: 37vh;
+}
+
+@media screen and (max-width: 600px) {
+  .hask__work {
+    left: 35%;
+  }
+}
+
+.hask__frame {
+  position: absolute;
+  display: none;
+  z-index: 2;
+}
